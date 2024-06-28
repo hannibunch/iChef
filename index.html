@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>iChef</title>
+        <meta name="description" content="ichef">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="dist/images/Flavicon.png">
+        <script src="https://kit.fontawesome.com/54c30fad7d.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="https://use.typekit.net/pde2ezl.css">
+        <link rel="stylesheet" href="dist/styles/main.css">
+    </head>
+
+    <body>
+        <header>
+            <nav id="navbar"> 
+                <ul id="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">My Pantry</a></li>
+                    <li><a href="#">My Cookbook</a></li>
+                </ul>
+
+                <div class="logo">
+                    <a href="index.html"><img src="dist/images/LOGO.png" alt="Logo"></a>
+                </div>
+                <div class="menu-right">
+                    <div class="icons">
+                        <a  href="#"><img src="dist/images/Noti.png" alt="Notification"></a>
+                        <a  href="#"><img src="dist/images/Chat.png" alt="Chat"></a>
+                    </div>
+                    <div class="profile">
+                        <a href="#"><img src="dist/images/AVA.png" alt="avatar"></a>
+                        <div class="greeting">
+                            <div class="gr-wave">
+                                <p style="font-weight: 600; margin: 0 5px 0 0;">Howdy!</p>
+                                <img src="dist/images/Waving Hand.png" alt="#"> <br>
+                            </div>
+                            <div class="gr-name">
+                                <a href="#">Hannibucnh</a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </nav>
+        </header>
+
+        <main>
+        <!-- ----------Hero----------------->
+            <section class="hero ">
+                <div class="hero-top ">
+                    <div class="chef-harry col-6" ><img class="col-12" src="dist/images/Chef.png" alt="What are you craving for today?"></div>
+                    <div class="pantry col-6 ">
+                        <h2>My pantry</h2>
+                        <div class="ingredients">
+                            <div class="ing-tab col-3">
+                                <img src="dist/images/Cooked Rice.png" alt="Rice">
+                                <h4>Rice</h4>
+                                <p class="ing-quantity">500g</p>
+                            </div>
+                            <div class="ing-tab col-3">
+                                <img src="dist/images/Roasted Sweet Potato.png" alt="Yam">
+                                <h4>Yam</h4>
+                                <p class="ing-quantity">200g</p>
+                            </div>
+                            <div class="ing-tab col-3">
+                                <img src="dist/images/Cheese Wedge.png" alt="Cheese">
+                                <h4>Cheese</h4>
+                                <p class="ing-quantity">150g</p>
+                            </div>
+                            <div class="ing-tab ing-add col-3">
+                                <button class="btn-effect add-btn">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                                <p class="ing-quantity">Add more</p>
+                            </div>
+
+                        </div>
+                        <div class="info-btn">
+                            <p class="col-6">Add ingredients you have at home to find recipes you can make now</p>
+                            <button class="btn-effect primary-btn">View all</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="hero-bot">
+                    <div class="generate ing-add col-4">
+                        <button class="btn-effect add-btn">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <p>Generate a recipe</p>
+                    </div>
+                    <div class="planning col-8">
+                        <div class="p-heading">
+                            <h2>Upcoming this week</h2>
+                            <div class="sliders">
+                                <a href="#">10 -16 Juin</a>
+                                <div class="s-btns">
+                                    <button class="sliders-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                                    <button class="sliders-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-recipes col-12">
+                            <div class="w-recipe col-3 ">
+                                <img class= "btn-effect" src="dist/images/Frame 109.png" alt="#">
+                                <div class="w-info">
+                                    <p>Monday</p>
+                                    <h4>Cod stew with tomatoes</h4>
+                                </div>
+
+                            </div>
+                            <div class="w-recipe col-3">
+                                <img class= "btn-effect" src="dist/images/Frame 110.png" alt="#">
+                                <div class="w-info">
+                                    <p>Tuesday</p>
+                                    <h4>Cod stew with tomatoes</h4>
+                                </div>
+                            </div>
+                            <div class="w-recipe col-3">
+                                <img class= "btn-effect" src="dist/images/Frame 113.png" alt="#">
+                                <div class="w-info">
+                                    <p>Wednesday</p>
+                                    <h4>Cod stew with tomatoes</h4>
+                                </div>
+                            </div>
+                            <div class="w-recipe col-3">
+                                <img class= "btn-effect"src="dist/images/Frame 112.png" alt="#">
+                                <div class="w-info">
+                                    <p>Thursday</p>
+                                    <h4>Cod stew with tomatoes</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-pagination">
+                            <img src="dist/images/Pagination.png" alt="#">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- -------------------------
+<button class="btn-effect save-btn" id="saveButton">
+    <i class="fa-regular fa-bookmark"></i>
+</button>
+<script src="dist/scripts/main.js"></script>
+-------------------------- -->
+
+    </body>
+
+</html>

@@ -1,0 +1,349 @@
+@font-face {
+    font-family: 'TT Ramillas Trial';
+    src: url('../../fonts/TT\ Ramillas\ Trial\ Black.ttf');
+  }
+
+@font-face {
+    font-family: 'Palmer Lake';
+    src: url('../../fonts/PalmerLakePrint-Regular.ttf');
+}
+
+
+$primary-green: #1A5632;
+$primary-lightgreen: #B4BD00;
+$primary-yellow: #F8B605;
+$primary-cream: #F1ECD1;
+$pastel-green: #E5E8A6;
+$bg-color: #F4F3ED;
+$text-color: #101010;
+$font-heading: 'TT Ramillas Trial', serif;
+$font-paragraph: 'Poppins', san-serif;
+
+html {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 62.5%;
+    //scrollbar-color: $primary-red;
+} 
+
+body {
+    background-color: $bg-color;
+    font-family: $font-paragraph;
+    color: $text-color;
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+/*****************Typography******************/
+h1, h2 {
+    font-family: $font-heading;
+    line-height: 90%;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+}
+h1 {font-size: 6.4rem;}
+h2 {font-size: 4rem;}
+h3 {font-size: 3.2rem;
+    font-family: $font-paragraph;
+    font-weight: 600;}
+
+h4 {font-size: 2rem;
+    font-family: $font-paragraph;
+    font-weight: 600;}
+
+a {text-decoration: none;}
+
+/*****************Button******************/
+.btn-effect{
+    border-radius: 15px;
+    border: 2px solid #000;
+    box-shadow: 3px 4px 0px 0px #000;
+    transition: transform 0.2s, box-shadow 0.2s;
+    &:hover {
+        transform: translate(3px, 4px);
+        box-shadow: none;
+      }
+}
+
+.primary-btn {
+    padding: 15px 60px;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: $primary-yellow;
+}
+
+.save-btn {
+    height: 45px;
+    width: 45px;
+    color: #F1ECD1;
+    font-size: 1.9rem;
+    background-color: $primary-green;
+}
+
+.add-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: $primary-green;
+    color: $primary-cream;
+}
+
+/*****************Navigation******************/
+nav {
+    background-color: $primary-cream;
+    padding: 35px 75px 25px 75px;
+    z-index: 10000;
+
+    display: flex;
+    justify-content: space-between;
+
+
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+    }
+}
+
+#menu a {
+    text-decoration: none;
+    padding: 10px 25px;
+    gap: 10px;
+    border-radius: 100px;
+
+    &:hover {
+        background-color: $pastel-green;
+    }
+    &:visited, &:active {
+        color: $primary-green;
+    }
+
+}
+
+.menu-right, .profile, .gr-wave, .gr-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.profile, .greeting{
+    margin-left: 10px;
+}
+.gr-name a {
+    text-decoration: none;
+    margin-right: 5px;
+    &:visited, &:active {
+        color: $text-color;
+    }
+}
+
+
+/*****************Responsive******************/
+
+/*Laptop - Grid system: 12 columns - Horizontal padding: 50px*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.col-2-3 {width: calc(100% / 3 * 2);}
+
+/*Tablette - Grid system: 8 columns - Horizontal padding: 30px */
+
+@media only screen and (max-width: 960px) {
+
+    .col-t-1 { width: calc(100% / 8); }
+    .col-t-2 { width: calc(100% / 8 * 2); }
+    .col-t-3 { width: calc(100% / 8 * 3); }
+    .col-t-4 { width: calc(100% / 8 * 4); }
+    .col-t-5 { width: calc(100% / 8 * 5); }
+    .col-t-6 { width: calc(100% / 8 * 6); }
+    .col-t-7 { width: calc(100% / 8 * 7); }
+    .col-t-8 { width: 100%; }
+
+    .col-t-2-3 {width: calc(100% / 3 * 2);}
+    .col-t-5-6 {width: calc(100% / 6 * 5);}
+
+}
+
+/*****************Hero******************/
+.hero {
+    margin: 50px 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.hero-top {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.chef-harry  {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.pantry {
+    margin-bottom: 8px;
+    height: 346px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    //gap: 30px;
+
+    background-color: $primary-green;
+    border: 2px solid #000;
+    border-radius: 15px;
+
+    h2 {color: $bg-color;}
+
+}
+
+.ingredients {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.ing-tab {
+    display: flex;
+    padding: 20px 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    border-radius: 15px;
+    background: $pastel-green;
+}
+.info-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    p {color: $bg-color;}
+
+}
+
+.ing-add {
+    transition: background-color 0.3s ease;
+    &:hover {
+        background-color: $primary-lightgreen;
+        p {color: $bg-color;}
+    }
+}
+
+.hero-bot {
+    display: flex;
+    gap: 20px;
+}
+
+.generate {
+    height: 346px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    border-radius: 15px;
+    background: $pastel-green;
+    border: 2px solid #000;
+
+    button {
+        width: 75px;
+        height: 75px;
+        font-size: 3.6rem;
+    }
+}
+
+.planning {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    //gap: 30px;
+
+    background-color: $primary-cream;
+    border: 2px solid #000;
+    border-radius: 15px;
+}
+
+.p-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sliders {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.sliders-btn {
+    height: 30px;
+    width: 30px;
+    background-color: rgba($color: #000000, $alpha: 1.0);
+    color: $primary-cream;
+    border-radius: 10px;
+    border: none;
+
+    &:hover {
+        color: #000;
+        background-color: rgba($color: #000000, $alpha: 0);
+        border: 2px solid  #000;
+    }
+}
+
+.w-recipes {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow: hidden;
+
+}
+
+.w-recipe {
+    position: relative;
+    z-index: 0;
+}
+.w-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px; 
+    z-index: 1;
+    p {
+    color: $bg-color;
+    font-weight: 200;
+    margin-bottom: 5px;
+    }
+    h4 {
+    width: 70%;
+    line-height: 100%;
+    font-size: 2.1rem;
+    color: $bg-color;
+    }
+}
+.w-pagination {
+    display: flex;
+    justify-content: center;
+}
