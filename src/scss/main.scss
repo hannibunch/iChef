@@ -37,16 +37,22 @@ body {
     padding: 0;
     border: none;
 }
+main {
+    margin-top: 200px;
+}
+
 /*****************Typography******************/
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+}
+
 h1, h2 {
     font-family: $font-heading;
     line-height: 90%;
 }
 
-h1, h2, h3, h4, h5, p {
-    margin: 0;
-    padding: 0;
-}
+
 h1 {font-size: 6.4rem;}
 h2 {font-size: 4rem;}
 h3 {font-size: 3.2rem;
@@ -61,7 +67,9 @@ a {text-decoration: none;
     &:visited, &:active {
         color: inherit;
     }
-    }
+}
+
+
 
 /*****************Button******************/
 .btn-effect{
@@ -80,6 +88,8 @@ a {text-decoration: none;
     font-size: 2rem;
     font-weight: 600;
     background-color: $primary-yellow;
+    font-family: $font-paragraph;
+
 }
 
 .save-btn {
@@ -119,6 +129,7 @@ a {text-decoration: none;
     display: flex;
     gap: 15px;
 }
+
 /*****************Navigation******************/
 nav {
     position: fixed;
@@ -131,8 +142,6 @@ nav {
 
     display: flex;
     justify-content: space-between;
-
-
 
     ul {
         display: flex;
@@ -153,8 +162,6 @@ nav {
     &:hover {
         background-color: $pastel-green;
     }
-
-
 }
 
 .menu-right, .profile, .gr-wave, .gr-name {
@@ -180,6 +187,66 @@ nav {
     align-items: center;
     justify-content: center;
 }
+
+/***************** Footer ******************/
+footer {
+    margin: 200px 0 0 0;
+    padding: 150px 75px;
+    background-color: $text-color;
+
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+        color: $primary-cream;
+        font-size: 2.4rem;
+        line-height: 110%;}
+}
+.f-logo {
+    position: relative;
+    z-index: 1;
+    //transform: scale(0.9)
+    p {
+        left: 220px;
+        bottom: -35px;
+        position: absolute;
+        z-index: 0;
+        color: $primary-yellow;
+        font-family: $font-handwriting;
+        font-size: 40px;
+        transform: rotate(-7.748deg);
+
+        
+    }
+}
+.follow {
+    display: flex;
+    flex-direction: column;
+    h2 {margin-bottom: 35px;}
+    p {color: $primary-cream;
+        margin-bottom: 10px;}
+}
+
+.sa-links button {
+    margin-right: 10px;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.link-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    a {
+        color: $primary-cream;
+        &:hover {
+            color: $primary-yellow;
+        }
+    }
+}
+
 /*****************Responsive******************/
 
 /*Laptop - Grid system: 12 columns - Horizontal padding: 50px*/
@@ -218,7 +285,7 @@ nav {
 
 /*****************Hero******************/
 .hero {
-    margin: 200px 75px 150px 75px;
+    margin: 50px 75px 150px 75px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -569,63 +636,6 @@ nav {
 }
 
 
-/***************** Footer ******************/
-footer {
-    margin: 200px 0 0 0;
-    padding: 100px 75px;
-    background-color: $text-color;
 
-    display: flex;
-    justify-content: space-between;
-
-    h2 {
-        color: $primary-cream;
-        font-size: 2.4rem;
-        line-height: 110%;}
-}
-.f-logo {
-    position: relative;
-    z-index: 1;
-    //transform: scale(0.9)
-    p {
-        left: 220px;
-        bottom: 0;
-        position: absolute;
-        z-index: 0;
-        color: $primary-yellow;
-        font-family: $font-handwriting;
-        font-size: 40px;
-        transform: rotate(-7.748deg);
-
-        
-    }
-}
-.follow {
-    display: flex;
-    flex-direction: column;
-    h2 {margin-bottom: 35px;}
-    p {color: $primary-cream;
-        margin-bottom: 10px;}
-}
-
-.sa-links button {
-    margin-right: 10px;
-}
-.links {
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-}
-.link-list {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    a {
-        color: $primary-cream;
-        &:hover {
-            color: $primary-yellow;
-        }
-    }
-}
 
 /***************** ******************/

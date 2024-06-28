@@ -1,1 +1,239 @@
-/*# sourceMappingURL=page.css.map */
+@charset "UTF-8";
+/***************** ******************/
+.nd-nav {
+  margin: 0px 75px;
+}
+.nd-nav a, .nd-nav i {
+  margin-right: 10px;
+}
+.nd-nav a:hover {
+  border-bottom: 0.5px solid #000;
+}
+
+.recipe-info {
+  margin: 50px 75px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.r-info-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nutri-tags {
+  display: flex;
+  gap: 20px;
+}
+
+[class*=nu-tag] {
+  flex: 1;
+  padding: 15px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nu-tag-1 {
+  background-color: #E5E8A6;
+}
+
+.nu-tag-2 {
+  background-color: rgba(224, 66, 66, 0.3);
+}
+
+.nu-tag-3 {
+  background-color: rgba(248, 182, 5, 0.45);
+}
+
+.nu-tag-4 {
+  background-color: #bbc7d2;
+}
+
+.nutritions h4 {
+  margin-bottom: 10px;
+}
+
+.re-btns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.re-btns button {
+  flex: 1;
+}
+
+.askchef-btn img {
+  margin-right: 10px;
+}
+
+.sc-btn {
+  font-family: "Poppins", san-serif;
+  padding: 17px 60px;
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: #1A5632;
+  color: #F1ECD1;
+}
+.sc-btn i {
+  margin-right: 10px;
+}
+
+/***************** ******************/
+.recipe-instruction {
+  margin: 150px 75px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #F1ECD1;
+  border-radius: 15px;
+}
+.recipe-instruction h2 {
+  font-size: 4.8rem;
+}
+
+.ingredient {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+  border: 2px solid #000;
+  background-color: #B4BD00;
+  border-radius: 15px;
+}
+
+.scale-option {
+  display: flex;
+  justify-content: space-between;
+}
+
+.scale button {
+  height: 35px;
+  width: 35px;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  color: #000;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1.5px solid #000;
+}
+.scale button:hover {
+  background-color: black;
+  color: #F1ECD1;
+}
+
+.US {
+  display: inline;
+  margin-right: 10px;
+  font-weight: 600;
+  border-bottom: 0.5px solid #000;
+}
+
+.Metric {
+  display: inline;
+}
+.Metric:hover {
+  border-bottom: 0.5px solid #000;
+}
+
+.ing-lists {
+  display: flex;
+  flex-direction: column;
+}
+
+.ing-list {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.ing-list input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin-bottom: 5px;
+  vertical-align: middle;
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 15px;
+  height: 15px;
+}
+.ing-list input[type=checkbox]:checked {
+  background-color: #1A5632;
+}
+.ing-list input[type=checkbox]::before {
+  content: "✔";
+  color: transparent;
+  text-align: center;
+  line-height: 15px;
+}
+.ing-list input[type=checkbox]:checked::before {
+  content: "✔";
+  color: #F1ECD1;
+}
+
+.instruction {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.step {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 50px;
+  background-color: #E5E8A6;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.step .s-btns {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+}
+.step h3 {
+  font-family: "Palmer Lake";
+  color: #B4BD00;
+  font-weight: 400;
+  font-size: 9.6rem;
+  line-height: 50%;
+}
+.step h4 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.ingr-btn button {
+  font-family: "Poppins", san-serif;
+  margin-right: 15px;
+  padding: 10px 20px;
+  background-color: #B4BD00;
+  border-radius: 50px;
+  border: none;
+}
+
+.tip button {
+  font-family: "Poppins", san-serif;
+  margin-bottom: 10px;
+  padding: 5px 20px;
+  background-color: #101010;
+  color: #F1ECD1;
+  font-size: 2rem;
+  border-radius: 50px;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.tip img {
+  transform: scale(0.5);
+}
+.tip p {
+  font-style: italic;
+}/*# sourceMappingURL=page.css.map */
