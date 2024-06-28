@@ -18,8 +18,8 @@
     <body>
         <header>
             <nav id="navbar"> 
-                <ul id="menu">
-                    <li><a href="#">Home</a></li>
+                <ul class="menu col-4">
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#">My Pantry</a></li>
                     <li><a href="#">My Cookbook</a></li>
                 </ul>
@@ -27,7 +27,7 @@
                 <div class="logo">
                     <a href="index.html"><img src="dist/images/LOGO.png" alt="Logo"></a>
                 </div>
-                <div class="menu-right">
+                <div class="menu-right col-4">
                     <div class="icons">
                         <a  href="#"><img src="dist/images/Noti.png" alt="Notification"></a>
                         <a  href="#"><img src="dist/images/Chat.png" alt="Chat"></a>
@@ -92,64 +92,317 @@
                         <button class="btn-effect add-btn">
                             <i class="fa-solid fa-plus"></i>
                         </button>
-                        <p>Generate a recipe</p>
+                        <p>Generate a new recipe</p>
                     </div>
                     <div class="planning col-8">
                         <div class="p-heading">
                             <h2>Upcoming this week</h2>
-                            <div class="sliders">
+                            <div class="w-sliders">
                                 <a href="#">10 -16 Juin</a>
                                 <div class="s-btns">
-                                    <button class="sliders-btn"><i class="fa-solid fa-chevron-left"></i></button>
-                                    <button class="sliders-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                                    <button class="sliders-btn w-sliders-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                                    <button class="sliders-btn w-sliders-btn"><i class="fa-solid fa-chevron-right"></i></button>
                                 </div>
                             </div>
                         </div>
                         <div class="w-recipes col-12">
-                            <div class="w-recipe col-3 ">
-                                <img class= "btn-effect" src="dist/images/Frame 109.png" alt="#">
+                            <div class="w-recipe col-4 ">
+                                <img class= "btn-effect col-12" src="dist/images/Frame 109.png" alt="#">
                                 <div class="w-info">
                                     <p>Monday</p>
                                     <h4>Cod stew with tomatoes</h4>
                                 </div>
 
                             </div>
-                            <div class="w-recipe col-3">
-                                <img class= "btn-effect" src="dist/images/Frame 110.png" alt="#">
+                            <div class="w-recipe col-4">
+                                <img class= "btn-effect col-12" src="dist/images/Frame 110.png" alt="#">
                                 <div class="w-info">
                                     <p>Tuesday</p>
                                     <h4>Cod stew with tomatoes</h4>
                                 </div>
                             </div>
-                            <div class="w-recipe col-3">
-                                <img class= "btn-effect" src="dist/images/Frame 113.png" alt="#">
+                            <div class="w-recipe col-4">
+                                <img class= "btn-effect col-12" src="dist/images/Frame 113.png" alt="#">
                                 <div class="w-info">
                                     <p>Wednesday</p>
                                     <h4>Cod stew with tomatoes</h4>
                                 </div>
                             </div>
-                            <div class="w-recipe col-3">
-                                <img class= "btn-effect"src="dist/images/Frame 112.png" alt="#">
+                            <div class="w-recipe col-4">
+                                <img class= "btn-effect col-12"src="dist/images/Frame 112.png" alt="#">
                                 <div class="w-info">
                                     <p>Thursday</p>
                                     <h4>Cod stew with tomatoes</h4>
                                 </div>
                             </div>
                         </div>
-                        <div class="w-pagination">
+                        <div class="pagination">
                             <img src="dist/images/Pagination.png" alt="#">
                         </div>
                     </div>
                 </div>
             </section>
+
+
+        <!-- ----------Chef's special----------------->
+            <section class="special">
+                <div class="s-heading">
+                    <div class="s-heading-left">
+                        <h1>Chef's specials</h1>
+                        <img src="dist/images/Group 24.png" alt="#">
+                    </div>
+                    <div class="s-btns">
+                        <button class="sliders-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button class="sliders-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="chef-recipes">
+                    <div onclick="recipeClick()" class="chef-recipe col-4">
+                        <img src="dist/images/MushroomToorDahl_900x 1.png" alt="#">
+                        <div class="c-recipe-info">
+                            <h3>Classic Greek Salad</h3>
+                            <p>This recipe will blow your mind</p>
+                            <div class="tags">
+                                <div class="tag">
+                                    <img src="dist/images/Fire.png" alt="calories">
+                                    <p>250kcal</p>
+                                </div>
+                                <div class="tag">
+                                    <img src="dist/images/Two Oclock.png" alt="duration">
+                                    <p>30mins</p>
+                                </div>
+                                <div class="tag">
+                                    <img src="dist/images/Flexed Biceps.png" alt="level">
+                                    <p>Hard</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-effect save-btn">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                    </div>
+
+                    <div onclick="recipeClick()" class="chef-recipe col-4">
+                        <img src="dist/images/MushroomToorDahl_900x 1df.png" alt="#">
+                        <div class="c-recipe-info">
+                            <h3>Classic Greek Salad</h3>
+                            <p>This recipe will blow your mind</p>
+                            <div class="tags">
+                                <div class="tag">
+                                    <img src="dist/images/Fire.png" alt="calories">
+                                    <p>250kcal</p>
+                                </div>
+                                <div class="tag">
+                                    <img src="dist/images/Two Oclock.png" alt="duration">
+                                    <p>30mins</p>
+                                </div>
+                                <div class="tag">
+                                    <img src="dist/images/Flexed Biceps.png" alt="level">
+                                    <p>Hard</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-effect save-btn">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                    </div>
+
+                    <div onclick="recipeClick()" class="chef-recipe col-4">
+                        <img src="dist/images/ddddf.png" alt="#">
+                        <div class="c-recipe-info">
+                            <h3>Classic Greek Salad</h3>
+                            <p>This recipe will blow your mind</p>
+                            <div class="tags">
+                                <div class="tag">
+                                    <img src="dist/images/Fire.png" alt="calories">
+                                    <p>250kcal</p>
+                                </div>
+                                <div class="tag">
+                                    <img src="dist/images/Two Oclock.png" alt="duration">
+                                    <p>30mins</p>
+                                </div>
+                                <div class="tag">
+                                    <img src="dist/images/Flexed Biceps.png" alt="level">
+                                    <p>Hard</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-effect save-btn">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <img src="dist/images/Pagination.png" alt="#">
+                </div>
+            </section>
+            <script src="dist/scripts/main.js"></script>
+
+
+        <!-- ------------------Discover----------------------- -->
+            <section class="discover">
+                <img src="dist/images/Discover.png" alt="Discover your next favorite recipe">
+            </section>
+
+
+        <!-- ------------------Meals----------------------- -->
+            <section class="meals">
+                <div class="meals-content">
+                    <div class="meals-left col-5">
+                        <div class="m-list col-8">
+                            <div class="m-heading">
+                                <h1>Pick your <br>meal </h1>
+                                <p class="skip">Don't <br> skip it</p>
+                            </div>
+                            <div class="meals-menu">
+                                <div class="menu-option">
+                                    <img src="dist/images/Breakfast.png" alt="#">
+                                    <a href="#">Breakfast</a>
+                                </div>
+                                <div class="menu-option">
+                                    <img src="dist/images/Lunch.png" alt="#">
+                                    <a href="#">Lunch</a>
+                                </div>
+                                <div class="menu-option">
+                                    <img src="dist/images/Supper.png" alt="#">
+                                    <a href="#">Supper</a>
+                                </div>
+                                <div class="menu-option">
+                                    <img src="dist/images/Dessert.png" alt="#">
+                                    <a href="#">Dessert</a>
+                                </div>
+                                <div class="menu-option">
+                                    <img src="dist/images/Snacks.png" alt="#">
+                                    <a href="#">Snacks</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sticker">
+                            <img src="dist/images/Asset 1@4x 1.png" alt="#">
+                        </div>
+    
+                    </div>
+    
+                    <div class="meals-right col-7">
+                        <div class="meals-recipes col-12">
+                            <div onclick="recipeClick()" class="chef-recipe col-6">
+                                <img src="dist/images/MushroomToorDahl_900x 1wrrrr.png" alt="#">
+                                <div class="c-recipe-info">
+                                    <h3>Classic Greek Salad</h3>
+                                    <p>This recipe will blow your mind</p>
+                                    <div class="tags">
+                                        <div class="tag">
+                                            <img src="dist/images/Fire.png" alt="calories">
+                                            <p>250kcal</p>
+                                        </div>
+                                        <div class="tag">
+                                            <img src="dist/images/Two Oclock.png" alt="duration">
+                                            <p>30mins</p>
+                                        </div>
+                                        <div class="tag">
+                                            <img src="dist/images/Flexed Biceps.png" alt="level">
+                                            <p>Hard</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn-effect save-btn">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </button>
+                            </div>
+    
+                            <div onclick="recipeClick()" class="chef-recipe col-6">
+                                <img src="dist/images/MushroomToorDahl_900x 1ef.png" alt="#">
+                                <div class="c-recipe-info">
+                                    <h3>Classic Greek Salad</h3>
+                                    <p>This recipe will blow your mind</p>
+                                    <div class="tags">
+                                        <div class="tag">
+                                            <img src="dist/images/Fire.png" alt="calories">
+                                            <p>250kcal</p>
+                                        </div>
+                                        <div class="tag">
+                                            <img src="dist/images/Two Oclock.png" alt="duration">
+                                            <p>30mins</p>
+                                        </div>
+                                        <div class="tag">
+                                            <img src="dist/images/Flexed Biceps.png" alt="level">
+                                            <p>Hard</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn-effect save-btn">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="m-sliders">
+                            <div class="s-btns">
+                                <button class="sliders-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                                <button class="sliders-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                            <button class="btn-effect primary-btn">View all</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="meals-bg col-12">
+                    <img src="dist/images/BG.png" alt="#">
+                </div>
+            </section>
+
+
+
         </main>
 
-        <!-- -------------------------
-<button class="btn-effect save-btn" id="saveButton">
-    <i class="fa-regular fa-bookmark"></i>
-</button>
-<script src="dist/scripts/main.js"></script>
--------------------------- -->
+
+        <!-- --------------------Footer--------------------- -->
+        <footer>
+            <div class="f-logo col-4">
+                <a href="index.html"><img src="dist/images/LOGO.png" alt="logo"></a>
+                <h2>Lorem ipsum dolor sit amet, <br> consectetur adipiscing</h2>
+                <p>Palmer Lake</p>
+            </div>
+            <div class="follow col-2">
+                <h2>Follow us</h2>
+                <p>Don't miss out</p>
+                <div class="sa-links">
+                    <button class="btn-effect add-btn">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </button>
+                    <button class="btn-effect add-btn">
+                        <i class="fa-brands fa-instagram"></i>
+                    </button>
+                    <button class="btn-effect add-btn">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="links col-2">
+                <h2>Quick links</h2>
+                <div class="link-list">
+                    <a href="#">Recipes</a>
+                    <a href="#">Cookbook</a>
+                    <a href="#">Meal planning</a>
+                </div>
+            </div>
+            <div class="links col-2">
+                <h2>Account</h2>
+                <div class="link-list">
+                    <a href="#">Profile</a>
+                    <a href="#">Setting</a>
+                    <a href="#">Invite Friends/a>
+                </div>
+            </div>
+            <div class="links col-2">
+                <h2>Contact</h2>
+                <div class="link-list">
+                    <a href="#">Contact Info</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Help centre</a>
+                </div>
+            </div>
+        </footer>
+
 
     </body>
 

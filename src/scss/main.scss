@@ -18,6 +18,8 @@ $bg-color: #F4F3ED;
 $text-color: #101010;
 $font-heading: 'TT Ramillas Trial', serif;
 $font-paragraph: 'Poppins', san-serif;
+$font-handwriting: 'Palmer Lake';
+
 
 html {
     box-sizing: border-box;
@@ -55,7 +57,11 @@ h4 {font-size: 2rem;
     font-family: $font-paragraph;
     font-weight: 600;}
 
-a {text-decoration: none;}
+a {text-decoration: none;
+    &:visited, &:active {
+        color: inherit;
+    }
+    }
 
 /*****************Button******************/
 .btn-effect{
@@ -90,10 +96,35 @@ a {text-decoration: none;}
     border-radius: 50px;
     background-color: $primary-green;
     color: $primary-cream;
-}
+    font-size: 2rem;
 
+}
+.sliders-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 2.4rem;
+
+    background-color: rgba($color: #000000, $alpha: 1.0);
+    color: $primary-cream;
+    border-radius: 15px;
+    border: none;
+
+    &:hover {
+        color: #000;
+        background-color: rgba($color: #000000, $alpha: 0);
+        border: 2px solid  #000;
+    }
+}
+.s-btns {
+    display: flex;
+    gap: 15px;
+}
 /*****************Navigation******************/
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: $primary-cream;
     padding: 35px 75px 25px 75px;
     z-index: 10000;
@@ -112,18 +143,17 @@ nav {
     }
 }
 
-#menu a {
+.menu a {
     text-decoration: none;
     padding: 10px 25px;
     gap: 10px;
     border-radius: 100px;
+    color: $primary-green;
 
     &:hover {
         background-color: $pastel-green;
     }
-    &:visited, &:active {
-        color: $primary-green;
-    }
+
 
 }
 
@@ -131,19 +161,25 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-end;
 }
 .profile, .greeting{
     margin-left: 10px;
 }
+
+.gr-wave, .gr-name {
+    justify-content: flex-start;
+}
 .gr-name a {
     text-decoration: none;
     margin-right: 5px;
-    &:visited, &:active {
-        color: $text-color;
-    }
 }
 
-
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /*****************Responsive******************/
 
 /*Laptop - Grid system: 12 columns - Horizontal padding: 50px*/
@@ -182,7 +218,7 @@ nav {
 
 /*****************Hero******************/
 .hero {
-    margin: 50px 75px;
+    margin: 200px 75px 150px 75px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -200,7 +236,7 @@ nav {
 }
 
 .pantry {
-    margin-bottom: 8px;
+    margin-bottom: 7px;
     height: 346px;
     padding: 30px;
     display: flex;
@@ -243,6 +279,10 @@ nav {
 }
 
 .ing-add {
+    p {
+        margin-top: 10px;
+        text-align: center;
+    }
     transition: background-color 0.3s ease;
     &:hover {
         background-color: $primary-lightgreen;
@@ -293,32 +333,25 @@ nav {
     align-items: center;
 }
 
-.sliders {
+.w-sliders {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 20px;
 }
 
-.sliders-btn {
-    height: 30px;
-    width: 30px;
-    background-color: rgba($color: #000000, $alpha: 1.0);
-    color: $primary-cream;
+.w-sliders-btn {
+    height: 35px;
+    width: 35px;
+    font-size: 1.6rem;
     border-radius: 10px;
-    border: none;
-
-    &:hover {
-        color: #000;
-        background-color: rgba($color: #000000, $alpha: 0);
-        border: 2px solid  #000;
-    }
 }
 
 .w-recipes {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    overflow: hidden;
+    //overflow: hidden;
 
 }
 
@@ -343,7 +376,256 @@ nav {
     color: $bg-color;
     }
 }
-.w-pagination {
+.pagination {
     display: flex;
     justify-content: center;
 }
+
+/*****************Chef's specials******************/
+.special {
+    margin: 150px 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.s-heading {
+    display: flex;
+    justify-content: space-between;
+}
+.s-heading-left {
+    display: flex;
+    gap: 10px;
+}
+
+.chef-recipes {
+    display: flex;
+    gap: 20px;
+}
+
+.chef-recipe {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px solid #000;
+    background-color: $primary-cream;
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.c-recipe-info {
+    margin: 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+
+    > p {color: rgba(31, 31, 31, 0.50);
+    }
+}
+
+.tags {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    display: flex;
+    padding: 10px 15px;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 100px;
+    background: $pastel-green;
+}
+
+.save-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+/***************** Discover******************/
+.discover {
+    margin: 150px 75px;
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+/*****************Meals******************/
+.meals {
+    position: relative;
+}
+
+.meals-content {
+    margin: 150px 75px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    gap: 20px;
+}
+.meals-left {
+    display: flex;
+    position: relative;
+}
+
+.m-list {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: $primary-green;
+    border: 2px solid #000;
+    border-radius: 15px;
+}
+
+.m-heading {
+    position: relative;
+    h1{color: $primary-cream;}
+}
+.skip {
+    position: relative;
+    top: -50px;
+    left: -10px;
+    font-family: $font-handwriting;
+    color: $primary-lightgreen;
+    font-size: 6.4rem;
+    font-weight: 400;
+    line-height: 50%;
+    text-align: center;
+    transform: rotate(-7.748deg);
+}
+
+.meals-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-option  {
+    display: flex;
+    padding: 20px 5px;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+    border-bottom: 1px solid rgba(244, 243, 237, 0.10);
+
+    a{
+        color: $bg-color;
+        font-size: 2.4rem;
+    }
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.1); 
+        a {
+            font-weight: 600;
+        }
+    }
+}
+.sticker {
+    position: absolute;
+    bottom: -35px;
+    right: 30px;
+}
+
+.meals-right {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.meals-recipes {
+    display: flex;
+    gap: 20px;
+}
+
+.m-sliders {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.meals-bg {
+    position: absolute;
+    z-index: 0;
+    bottom: -200px;
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+    }
+
+}
+
+
+/***************** Footer ******************/
+footer {
+    margin: 200px 0 0 0;
+    padding: 100px 75px;
+    background-color: $text-color;
+
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+        color: $primary-cream;
+        font-size: 2.4rem;
+        line-height: 110%;}
+}
+.f-logo {
+    position: relative;
+    z-index: 1;
+    //transform: scale(0.9)
+    p {
+        left: 220px;
+        bottom: 0;
+        position: absolute;
+        z-index: 0;
+        color: $primary-yellow;
+        font-family: $font-handwriting;
+        font-size: 40px;
+        transform: rotate(-7.748deg);
+
+        
+    }
+}
+.follow {
+    display: flex;
+    flex-direction: column;
+    h2 {margin-bottom: 35px;}
+    p {color: $primary-cream;
+        margin-bottom: 10px;}
+}
+
+.sa-links button {
+    margin-right: 10px;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.link-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    a {
+        color: $primary-cream;
+        &:hover {
+            color: $primary-yellow;
+        }
+    }
+}
+
+/***************** ******************/
